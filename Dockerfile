@@ -1,4 +1,4 @@
-FROM node:16-alpine as builder
+FROM node:18-alpine as builder
 
 RUN mkdir /app/
 WORKDIR /app
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:16-alpine as production
+FROM node:18-alpine as production
 
 VOLUME /tmp
 ARG NODE_ENV=production
