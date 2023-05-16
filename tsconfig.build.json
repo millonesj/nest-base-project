@@ -1,5 +1,5 @@
 {
   "extends": "./tsconfig.json",
   "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
-  "include": ["swagger.config.ts"]
+  "include": ["swagger.config.ts", "src/**/*"]
 }
